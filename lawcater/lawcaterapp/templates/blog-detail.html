@@ -1,0 +1,320 @@
+{% extends 'common.html' %} {% block title %} Story {% endblock %}
+{% block body %}
+ {% load static %}
+ <style>
+   .comment-section{
+    margin-top:20px;
+    background-color:#e9ebee;
+}
+
+.be-comment-block {
+    margin-bottom: 50px !important;
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    padding: 50px 70px;
+    border:1px solid #ffffff;
+}
+
+.comments-title {
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 15px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-img-comment {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.be-ava-comment {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.be-comment-content {
+    margin-left: 80px;
+}
+
+.be-comment-content span {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.be-comment-name {
+    font-size: 13px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-comment-content a {
+    color: #383b43;
+}
+
+.be-comment-content span {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.be-comment-time {
+    text-align: right;
+}
+
+.be-comment-time {
+    font-size: 11px;
+    color: #b4b7c1;
+}
+
+.be-comment-text {
+    font-size: 13px;
+    line-height: 18px;
+    color: #7a8192;
+    display: block;
+    background: #f6f6f7;
+    border: 1px solid #edeff2;
+    padding: 15px 20px 20px 20px;
+}
+
+.form-group.fl_icon .icon {
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    background: #f6f6f7;
+    color: #b5b8c2;
+    text-align: center;
+    line-height: 50px;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.form-group .form-input {
+    font-size: 13px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #b4b7c1;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #edeff2;
+    border-radius: 3px;
+}
+
+.form-group.fl_icon .form-input {
+    padding-left: 70px;
+}
+
+.form-group textarea.form-input {
+    height: 150px;
+}
+
+
+
+
+
+ </style>
+ <section class=" parent ">
+    <div class="banner_inner child">
+
+            <div class="image detail-blog">
+                <!-- <img  class="img-fluid" src="img/banner/home-banner.jpg" alt="roller coaster"> -->
+
+                <img  class="img-fluid" src="/media/{{post.image}}" alt="roller coaster">
+
+
+            </div>
+
+
+
+    </div>
+
+
+
+<div class="child stack-top">
+    <h1 class="text-center">{{post.tile}} </h1>
+
+    <div class="embed-responsive embed-responsive-16by9 youtube-video">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/H5adsB_YaE4" allowfullscreen></iframe>
+
+    </div>
+
+
+    <!-- <img src="img/blog/image2.png"  alt="carrying bag"> -->
+    <div class="content-main">
+    <p class="qodef-m-text"> {{post.content}} </p>
+
+        <p class="qodef-m-text">“I got divorced at 31. I had a loveless marriage and I’d given it 5 years only because of my daughter, Aiyana. But when I realised we wanted different things from life, I ended it. And after the divorce, I decided to focus only on myself and Aiyana.
+            But I missed having a partner–the warmth, affection, and the feeling of coming back home to somebody. When I told my friends about this, they encouraged me to join Tinder! I was skeptical–I was a 32-year-old single mother who had forgotten what it was like to ‘date’. For me, finding someone who would accept my daughter, Aiyana, was paramount. But then I thought, ‘what’s the harm in giving it a shot?’
+            And so, I downloaded Tinder; I matched with a few people, and had good conversations too. I went out for coffee with a few of my matches, but that spark was missing and with some, I knew we were better off as friends. That was until I came across Rajiv’s profile–I just had to swipe right! His bio was mighty impressive and had the lamest joke; it was so bad it actually made me laugh. As fate had it, he matched with me too! We spoke for a while and I realised he’d gone through a divorce recently and had a 9 year old daughter, Rhea, as well! We started talking every night; we even had the same taste in music–from Coldplay to Prateek Kuhad to Ritviz; our playlists were the same!
+            A month went by in a whirlwind of sharing favorite songs, stories from our past and dreams of our future, until he finally asked me to coffee. I was so nervous, thoughts like ‘Will he like me?’ clouded my mind. But as soon as we met, I felt like a teenager in love all over again! We held hands and I blushed throughout the entire date. He was so funny, thoughtful...he just got me! Our date lasted for 4 hours; we didn’t even realise how quickly time passed! And after that, we met every night. We went out for karaokes, movies, and even dancing! My God, the feeling of new love doesn’t change no matter how old you get!
+            And a month later, when we were sure of each other, we introduced our daughters, Rhea and Aiyana to each other. I was nervous about it at first, but when we met together for the first time, everyone just got on! Rhea and Aiyana bonded over their love for skating and Calvin and Hobbes!
+            We began doing weekly dinners and weekends were spent playing board games, going on road trips and watching our favourite movies! In Rajiv and Rhea, Aiyana and I found home; we found family.
+            We’re planning on making it official next year; I’m so excited to spend all my evenings with my family jamming to Ritviz! Rajiv has made me believe that there is no such thing as a once-in-a-lifetime kind of love; love can happen again and when it does, all you need to do is have a little bit of faith and let it in!” #SwipeStories</p>
+        </p>
+            <!-- <div class="single-img">
+            <img  class= "image-fit" src="img/blog/image2.png"  alt="carrying bag">
+            </div> -->
+
+    </div>
+</div>
+
+
+</section>
+
+<h2>Leave your comment!</h2>
+<div id="comments_section">
+
+  {% if user.is_authenticated %}
+  <form method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      {{ comment_form }}
+      <button class="btn btn-info" type="submit">Add comment <i class="fas fa-comments"></i></button>
+    </div>
+  </form>
+  {% else %}
+  <a class="btn btn-outline-info" href="{% url 'login' %}?next={{request.path}}">Log in to add a comment!</a><br>
+  {% endif %}
+
+  {% if comments %}
+  <strong class="text-secondary">{{ object.number_of_comments }} Comment{{ object.number_of_comments|pluralize }}</strong>
+  <hr>
+  <ul>
+    {% for comment in comments %}
+    <li>
+     <div>
+        <span>
+          <strong class="text-info">{{ comment.author }} </strong>
+          <small class="text-muted">  {{ comment.created_on }}</small>
+        </span>
+        <p>
+          {{ comment.body|safe }}
+        </p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <strong class="text-secondary">No comments yet...</strong>
+  {% endif %}
+
+</div>
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container comment-section">
+<div class="be-comment-block">
+	<h1 class="comments-title">Comments </h1>
+    {% for comment in comments %}
+
+	<div class="be-comment">
+		<div class="be-img-comment">
+			<a href="blog-detail-2.html">
+				<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="be-ava-comment">
+			</a>
+		</div>
+		<div class="be-comment-content">
+
+				<span class="be-comment-name">
+					<a href="blog-detail-2.html"> {{ comment.name }}</a>
+					</span>
+				<span class="be-comment-time">
+					<i class="fa fa-clock-o"></i>
+                    {{ comment.created_on }}
+				</span>
+
+			<p class="be-comment-text">
+                {{ comment.body | linebreaks }}
+			</p>
+		</div>
+	</div>
+    {% endfor %} -->
+	<!-- <div class="be-comment">
+		<div class="be-img-comment">
+			<a href="blog-detail-2.html">
+				<img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="be-ava-comment">
+			</a>
+		</div>
+		<div class="be-comment-content">
+			<span class="be-comment-name">
+				<a href="blog-detail-2.html">Phoenix, the Creative Studio</a>
+			</span>
+			<span class="be-comment-time">
+				<i class="fa fa-clock-o"></i>
+				May 27, 2015 at 3:14am
+			</span>
+			<p class="be-comment-text">
+				Nunc ornare sed dolor sed mattis. In scelerisque dui a arcu mattis, at maximus eros commodo. Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non ant. Proin ut ornare lectus, vel eleifend est. Fusce hendrerit dui in turpis tristique blandit.
+			</p>
+		</div>
+	</div>
+	<div class="be-comment">
+		<div class="be-img-comment">
+			<a href="blog-detail-2.html">
+				<img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="be-ava-comment">
+			</a>
+		</div>
+		<div class="be-comment-content">
+			<span class="be-comment-name">
+				<a href="blog-detail-2.html">Cüneyt ŞEN</a>
+			</span>
+			<span class="be-comment-time">
+				<i class="fa fa-clock-o"></i>
+				May 27, 2015 at 3:14am
+			</span>
+			<p class="be-comment-text">
+				Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non ant
+			</p>
+		</div>
+	</div> -->
+
+    <!-- <div class="card-body">
+        {% if new_comment %}
+        <div class="alert alert-success" role="alert">
+          Your comment is awaiting moderation
+        </div>
+        {% else %}
+        <h3>Leave a comment</h3> -->
+
+    <!-- <form class="form-block">
+        {{ comment_form.as_p }}
+        {% csrf_token %}
+        <button class="btn btn-info" type="submit">Add comment <i class="fas fa-comments"></i></button>
+    </div> -->
+
+		<!-- <div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<div class="form-group fl_icon">
+					<div class="icon"><i class="fa fa-user"></i></div>
+					<input class="form-input" type="text" placeholder="Your name">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 fl_icon">
+				<div class="form-group fl_icon">
+					<div class="icon"><i class="fa fa-envelope-o"></i></div>
+					<input class="form-input" type="text" placeholder="Your email">
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="form-group">
+					<textarea class="form-input" required="" placeholder="Your text"></textarea>
+				</div>
+			</div>
+			<a class="btn btn-primary pull-right">submit</a>
+		</div> -->
+	<!-- </form> -->
+    <!-- {% endif %} -->
+<!-- </div>
+</div> -->
+
+
+ {% endblock %}

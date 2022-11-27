@@ -1,0 +1,213 @@
+{% extends 'common.html' %} {% block title %} Blog {% endblock %}
+{% block body %}
+ {% load static %}
+
+
+ <div class="image ">
+    <img  class="img-fluid" src=" {% static 'img/blog/image5.png" alt="roller coaster">
+
+</div>
+
+
+
+<div class="row row-blog">
+    <div class="col-12 col-md-8 ">
+        <div class="row">
+                    {% for i in posts %}
+                    <div class="col-6 col-md-6 ">
+
+            <a href="/post/{{i.slug}}" class="img-gal">
+                <!-- <div class="blog-gallery-image" style="background: url(img/blog/main-blog/caste.png);"></div> -->
+                <img class="blog-gallery-image" src="{% static 'img/team/shrijala.jpg' %}" alt="girl">
+                <p>
+                    {{i.author}}
+                NOVEMBER 3, 2022
+                <!-- What legal tools have been tried for ending caste-
+                based discrimination? -->
+            </p>
+            <p>
+                {{i.title}}
+
+            </p>
+            </a>
+
+
+
+
+                <a href="img/elements/g1.jpg" class="img-gal">
+
+
+                    <div class="blog-gallery-image" style="background: url(img/blog/main-blog/sexual_female.png);"></div>
+                <p>
+                    OCTOBER 13, 2022
+                    How safe and reliable has law made it to report
+                    cases of sexual offences for women?
+                </p>
+                <p>
+                    Do all the stories that reach the investigate ears actually
+                    reach the investigation process?
+                </p>
+                </a>
+
+
+
+
+                <div>
+                    <a href="img/elements/g1.jpg" class="img-gal">
+                        <div class="blog-gallery-image" style="background: url(img/blog/main-blog/tourists.png);"></div>
+                    <p>
+                        September 7, 2022
+                        In what ways are visitiors tourists protected around the world?
+                    </p>
+                    <p>
+                       In any case, they are aliens to the foreign land for the time being and thus are unware of
+                       the rules, guidelines and regulatory protocols to be adopted while they are there.
+                    </p>
+                    </a>
+                    </div>
+
+
+                    <div>
+                        <a href="img/elements/g1.jpg" class="img-gal">
+                            <div class="blog-gallery-image" style="background: url(img/blog/main-blog/mental\ health.png);"></div>
+                        <p>
+                            August 27, 2022
+                            How are mental health service and professionals regulated
+                        </p>
+                        <p>
+                            A different scenario would be us suffering in silence !
+                        </p>
+                        </a>
+                        </div>
+
+                     </div>
+                     {% endfor %}
+
+        <!-- <div class="col-6 col-md-6">
+            <a href="img/elements/g3.jpg" class="img-gal">
+                <div class="blog-gallery-image" style="background: url(img/blog/main-blog/sexual_male.png);"></div>
+                <p>
+                    OCTOBER 15, 2022
+                    Have our laws recognized sexual offences against male?
+                </p>
+                <p>
+                    Should crime and offences be subject to gender distinction?
+                </p>
+            </a>
+
+
+            <a href="img/elements/g3.jpg" class="img-gal">
+                <div class="blog-gallery-image" style="background: url(img/blog/main-blog/saftey.png);"></div>
+                <p>
+                    September 13, 2022
+                    Are there any saftey protocols adventure industry needs to comply with?
+                </p>
+                <p>
+                    Are we paying attention to the possible doubts regarding the saftey measure employed
+                    by these business?
+                </p>
+            </a>
+            <a href="img/elements/g3.jpg" class="img-gal">
+                <div class="blog-gallery-image" style="background: url(img/blog/main-blog/urban_agriculture.png);"></div>
+                <p>
+                    August 16, 2022
+                    Can rooftop farming be prompted as a way of urban agriculture?
+                </p>
+                <p>
+                    Has rooftop farming been effective in its benefits!
+                </p>
+            </a>
+            <a href="img/elements/g3.jpg" class="img-gal">
+                <div class="blog-gallery-image" style="background: url(img/blog/main-blog/saftey.png);"></div>
+                <p>
+                    August 12, 2022
+                    Has the concept of torts made enough space in Nepalese legal mainstream?
+                </p>
+                <p>
+                    Law are subject to change according to the changes in society.
+                </p>
+            </a>
+        </div> -->
+
+        </div>
+        </div>
+
+    <div class="col-4 col-md-3 right-blog">
+        <div class="row recent">
+            <a href="img/elements/g3.jpg" class="img-gal">
+                <div class="right-gallery-image" style="background: url(img/blog/main-blog/tourists.png);"></div>
+                <div class="content-recent">
+                <p>
+                    OCTOBER 2, 2022
+
+                </p>
+                <p>
+                    I escaped death! – Guru Gauranga Das.
+                </p>
+            </div>
+            </a>
+
+
+            <a href="img/elements/g3.jpg" class="img-gal">
+                <div class="right-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
+                <div class="content-recent">
+                <p>
+                    OCTOBER 2, 2022
+
+                </p>
+                <p>
+                    I escaped death! – Guru Gauranga Das.
+                </p>
+            </div>
+            </a>
+
+            <a href="img/elements/g3.jpg" class="img-gal">
+                <div class="right-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
+                <div class="content-recent">
+                <p>
+                    OCTOBER 2, 2022
+
+                </p>
+                <p>
+                    I escaped death! – Guru Gauranga Das.
+                </p>
+            </div>
+            </a>
+            <a href="img/elements/g3.jpg" class="img-gal">
+                <div class="right-gallery-image" style="background: url(img/blog/main-blog/saftey.png);"></div>
+                <div class="content-recent">
+                <p>
+                    OCTOBER 2, 2022
+
+                </p>
+                <p>
+                    I escaped death! – Guru Gauranga Das.
+                </p>
+            </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!----pagination-->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">❮</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="blog1.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">6</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">❯</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+ {% endblock %}

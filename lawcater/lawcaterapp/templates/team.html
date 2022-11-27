@@ -1,0 +1,97 @@
+{% extends 'common.html' %} {% block title %} Lawcater {% endblock %}
+{% block body %}
+ {% load static %}
+
+  <!--================Home Banner Area =================-->
+  <section class="banner_area ">
+    <div class="banner_inner overlay d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <div class="page_link">
+                    <a href="index.html">Home</a>
+                    <a href="team.html">Team</a>
+                </div>
+                <h2>Team Member</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+<!--================ Start Team Area =================-->
+<section class="section_gap team-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="main_title">
+                    <h2>Meet Our Experienced Team</h2>
+                    <p>Life is synonymous to stories. And stories belong to the ordinary people just as much as they are highlighted to be about the ones in the limelight. Our objective as 'Lawcaters' is to bring out the unheard and underrepresented stories of newness and timeless truths, of ecstasies and pains, of pioneering and stereotypes, to a platform visible to more common sharers of such experiences. Along with serving stories, we intend to infuse law wherever it's able to address issues circumventing the stories.In today's stage of civilization, as much synonymous life is to stories, it is to law too. So you can expect doses of laymen stories from us and to be weaved along as we try to opine socio-legal solutions to very many issues we as a society do not address in general.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- single-team-member -->
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single_member">
+                    <div class="author">
+                        <img class="img-fluid" src="{% static 'img/team/smriti.jpg' %}" alt="girl">
+                    </div>
+                    <div class="author_decs">
+                        <h5>Smriti Paudel</h5>
+                        <p class="profession">Admin/Director</p>
+                    </div>
+                </div>
+            </div>
+            <!-- single-team-member -->
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single_member">
+                    <div class="author">
+                        <img class="img-fluid" src="{% static 'img/team/shrijala.jpg' %}" alt="girl">
+                    </div>
+                    <div class="author_decs">
+                        <h5>Shrijala Pandey</h5>
+                        <p class="profession">Content Writer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- single-team-member -->
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single_member">
+                    <div class="author">
+                        <img class="img-fluid" src="{% static 'img/team/sejal.jpg' %}" alt="girl">
+                    </div>
+                    <div class="author_decs">
+                        <h5>Sejal Acharya</h5>
+                        <p class="profession">Researcher</p>
+                    </div>
+                </div>
+            </div>
+            <!-- single-team-member -->
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single_member">
+                    <div class="author">
+                        <img class="img-fluid" src="{% static 'img/team/binit.jpg' %}" alt="boy">
+                    </div>
+                    <div class="author_decs">
+                        <h5>Binit BT Magar</h5>
+                        <p class="profession">Cameraperson</p>
+                    </div>
+                </div>
+            </div>
+            <!-- single-team-member -->
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single_member">
+                    <div class="author">
+                        <img class="img-fluid" src="{% static 'img/team/pranab.jpg' %}" alt="boy">
+                    </div>
+                    <div class="author_decs">
+                        <h5>Pranab Pokharel</h5>
+                        <p class="profession">IT Architect</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
